@@ -14,9 +14,9 @@
 
 Liệt kê ít nhất 2 assets cần bảo vệ.
 
-- Asset 1:Dữ liệu người dùng (tên, mật khẩu)
-- Asset 2:Hệ thống website/ứng dụng
-- Asset 3 (nếu có):
+- Asset 1: Dữ liệu người dùng (tên đăng nhập, mật khẩu, thông tin cá nhân)
+- Asset 2: Dữ liệu điểm số của sinh viên
+- Asset 3: Hệ thống website/ứng dụng quản lý điểm
 
 ---
 
@@ -24,22 +24,26 @@ Liệt kê ít nhất 2 assets cần bảo vệ.
 
 Ghép từng sự cố với CIA.
 
-- Sự cố A -> Confidentiality (lộ mật khẩu người dùng)
-- Sự cố B -> Integrity (dữ liệu bị sửa sai)
-- Sự cố C -> Availability (web bị sập, không truy cập được)
+- Sự cố A → Confidentiality (lộ mật khẩu người dùng)
+- Sự cố B → Integrity (dữ liệu bị sửa sai)
+- Sự cố C → Availability (website bị sập, không truy cập được)
 
 ---
 
 ## 3. Phân tích sự cố B
 
-- Threat: Hacker chỉnh sửa dữ liệu hoặc lỗi từ người dùng
+- Threat:
+  Hacker tấn công và chỉnh sửa dữ liệu
+  Người dùng nhập sai hoặc cố tình sửa dữ liệu
 - Vulnerability:
-  Không kiểm tra dữ liệu nhập vào
-  Không có phân quyền rõ ràng
+  Không kiểm tra dữ liệu đầu vào (input validation yếu)
+  Không phân quyền rõ ràng giữa người dùng và quản trị viên
+  Thiếu cơ chế ghi log hoặc kiểm tra thay đổi dữ liệu
 - Mitigation:
-  Kiểm tra dữ liệu đầu vào (validation)
-  Phân quyền người dùng
-  Sao lưu dữ liệu định kỳ
+  Kiểm tra và xác thực dữ liệu đầu vào (validation)
+  Áp dụng phân quyền (role-based access control)
+  Ghi log hoạt động để theo dõi thay đổi
+  Sao lưu dữ liệu định kỳ (backup)
 
 ---
 
