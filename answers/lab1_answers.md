@@ -24,9 +24,9 @@ Liệt kê ít nhất 2 assets cần bảo vệ.
 
 Ghép từng sự cố với CIA.
 
-- Sự cố A → Confidentiality
-- Sự cố B → Integrity
-- Sự cố C → Availability
+- Sự cố A -> Confidentiality
+- Sự cố B -> Integrity
+- Sự cố C -> Availability
 
 ---
 
