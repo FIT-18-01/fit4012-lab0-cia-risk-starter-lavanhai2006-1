@@ -24,9 +24,9 @@ Liệt kê ít nhất 2 assets cần bảo vệ.
 
 Ghép từng sự cố với CIA.
 
-- Sự cố A → Confidentiality (lộ mật khẩu người dùng)
-- Sự cố B → Integrity (dữ liệu bị sửa sai)
-- Sự cố C → Availability (website bị sập, không truy cập được)
+- Sự cố A → Confidentiality
+- Sự cố B → Integrity
+- Sự cố C → Availability
 
 ---
 
