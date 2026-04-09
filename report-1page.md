@@ -25,9 +25,9 @@
 
 **CIA mapping:**
 
-- Sự cố A -> Confidentiality (lộ điểm hoặc thông tin sinh viên)
-- Sự cố B -> Integrity (điểm bị sửa sai hoặc thay đổi trái phép)
-- Sự cố C -> Availability (hệ thống không truy cập được)
+- Sự cố A -> Confidentiality
+- Sự cố B -> Integrity
+- Sự cố C -> Availability
 
 **Phân tích sự cố B:**
 
