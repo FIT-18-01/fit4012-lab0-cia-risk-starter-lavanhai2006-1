@@ -25,9 +25,9 @@
 
 **CIA mapping:**
 
-- Sự cố A -> Confidentiality
+- Sự cố A -> Availability
 - Sự cố B -> Integrity
-- Sự cố C -> Availability
+- Sự cố C -> Confidentiality
 
 **Phân tích sự cố B:**
 
